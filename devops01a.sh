@@ -13,8 +13,11 @@ system_profiler SPHardwareDataType | grep 'Proces\|Core' |grep -v L2
 Echo "         "
 
 
-Echo "****** MemoryU Information  *******"
+Echo "****** Memory Information  *******"
 system_profiler SPHardwareDataType | grep "  Memory:"
 Echo "         "
 
+Echo "****** Network IP/MAC  Information  *******"
+ifconfig
+Echo "         "
 
